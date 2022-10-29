@@ -1,0 +1,18 @@
+@startuml
+
+class Geraet{
+    geraeteId
+    kategorie
+}
+
+note "Bsp. fuer Kategorie: Chromecast, Mac, ..." as CMT1
+CMT1 .left. Geraet
+
+class Raum{
+    raumId
+    geschoß
+}
+
+Geraet "*" --- "1"Raum
+
+@enduml
